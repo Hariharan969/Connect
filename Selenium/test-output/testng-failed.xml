@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Default suite]" parallel="methods">
+  <parameter name="sUsername" value="hariharans"/>
+  <parameter name="sPassword" value="maveric6@"/>
+  <test name="Default test(failed)" parallel="methods" preserve-order="true">
+    <parameter name="sUsername" value="hariharans"/>
+    <parameter name="sPassword" value="maveric6@"/>
+    <classes>
+      <class name="LoginConnTest.ConnTest2">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="testDrive" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- LoginConnTest.ConnTest2 -->
+      <class name="LoginConnTest.ConnTest">
+        <methods>
+          <include name="terminateBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- LoginConnTest.ConnTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
